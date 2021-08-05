@@ -1,6 +1,16 @@
 ## Clone git 
 https://github.com/9Sof/Vaccine-Covid19
 
+## What is Project using
+#### node
+#### postgreSQL
+
+## Install NestJS
+
+```bash
+$ npm i -g @nestjs/clinpm i -g @nestjs/cli
+```
+
 ## Installation
 
 ```bash
