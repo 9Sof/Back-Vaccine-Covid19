@@ -2,8 +2,8 @@
 https://github.com/9Sof/Vaccine-Covid19
 
 ## What is Project using
-#### node
-#### postgreSQL
+- node
+- postgreSQL
 
 ## Install NestJS
 
