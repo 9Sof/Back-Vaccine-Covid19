@@ -10,16 +10,16 @@ export class UsersService {
 
     async getUsers(): Promise<any> {
         const users = await this.usersRepository.getUsers();
-        return { success: true, users: users }
+        return users
     }
 
     async register(data): Promise<any> {
         const user = await this.usersRepository.register(data);
-        return { success: true, user: user }
+        return user
     }
-    
+
     async OTPVerify(data): Promise<any> {
         const otp = await this.usersRepository.OTPVerify(data);
-        return { success: true, otp: otp }
+        return otp
     }
 }

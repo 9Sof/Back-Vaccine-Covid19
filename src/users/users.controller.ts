@@ -14,12 +14,14 @@ export class UsersController {
     }
 
     @Post('/register')
-    async Register(@Body() user: Users): Promise<any> {
-        return await this.usersService.register(user);
+    async Register(@Body() user: Users, @Res() res): Promise<any> {
+        const result = await this.usersService.register(user);
+        return res.status(HttpStatus.OK).json(result)
     }
 
-    @Get('/otp')
-    async OTPVerify(@Body() data): Promise<any> {
-        return await this.usersService.OTPVerify(data);
+    @Post('/otp')
+    async OTPVerify(@Body() data, @Res() res): Promise<any> {
+        const result = await this.usersService.OTPVerify(data);
+        return res.status(HttpStatus.OK).json(result)
     }
 }
