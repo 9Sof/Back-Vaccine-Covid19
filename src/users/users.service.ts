@@ -9,17 +9,27 @@ export class UsersService {
     ) { }
 
     async getUsers(): Promise<any> {
-        const users = await this.usersRepository.getUsers();
-        return users
+        const result = await this.usersRepository.getUsers();
+        return result
+    }
+
+    async getUser(userId): Promise<any> {
+        const result = await this.usersRepository.getUser(userId);
+        return result
     }
 
     async register(data): Promise<any> {
-        const user = await this.usersRepository.register(data);
-        return user
+        const result = await this.usersRepository.register(data);
+        return result
     }
 
     async OTPVerify(data): Promise<any> {
-        const otp = await this.usersRepository.OTPVerify(data);
-        return otp
+        const result = await this.usersRepository.OTPVerify(data);
+        return result
+    }
+
+    async search(data): Promise<any> {
+        const result = await this.usersRepository.search(data);
+        return result
     }
 }
