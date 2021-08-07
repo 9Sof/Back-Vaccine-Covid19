@@ -13,7 +13,7 @@ $ npm i -g @nestjs/clinpm i -g @nestjs/cli
 
 ## Install PostgreSQL
 
-How to instll : https://medium.com/@maxsurasak/install-postgresql-on-windows-7e75187bc22a
+How to install : https://medium.com/@maxsurasak/install-postgresql-on-windows-7e75187bc22a
 
 ## Installation
 
