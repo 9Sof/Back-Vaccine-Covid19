@@ -11,6 +11,10 @@ https://github.com/9Sof/Vaccine-Covid19
 $ npm i -g @nestjs/clinpm i -g @nestjs/cli
 ```
 
+## Install PostgreSQL
+
+How to instll : https://medium.com/@maxsurasak/install-postgresql-on-windows-7e75187bc22a
+
 ## Installation
 
 ```bash
